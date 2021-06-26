@@ -23,24 +23,24 @@
   border-radius: 0px 0px 4px 4px;
 
   text-align: center;
-}
 
-.our-team__elements:nth-child(4n) {
-  margin-right: 0px;
-}
+  &:nth-child(4n) {
+    margin-right: 0px;
+  }
 
-.our-team__elements .our-team__photo {
-  display: block;
-}
+  & .our-team__photo {
+    display: block;
+  }
 
-.our-team__elements .our-team__name {
-  color: var(--main-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  & .our-team__name {
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
 
-  margin-top: 0px;
-  margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
 }
 
 .our-team__card {

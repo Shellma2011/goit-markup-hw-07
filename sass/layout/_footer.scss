@@ -1,10 +1,10 @@
 /* footer */
 
 .footer {
-  background-color: var(--hero-footer-background-color);
-
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: var(--hero-footer-background-color);
 }
 
 .footer__container {
@@ -79,24 +79,20 @@
   background-color: var(--hero-footer-background-color);
 }
 
-.footer-form .footer-form__input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+.footer-form {
+  &.footer-form__input {
+    &::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
 
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-form .button {
-  position: absolute;
-  margin-top: 20px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
 }
 
 .footer-icon__send {
