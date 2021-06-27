@@ -51,6 +51,8 @@
   }
 }
 
+/* portfolio */
+
 .portfolio__button {
   display: flex;
   justify-content: center;
@@ -58,22 +60,34 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-}
 
-.portfolio__button-nav {
-  margin-left: 0px;
-  margin-right: 8px;
+  &-nav {
+    margin-left: 0px;
+    margin-right: 8px;
 
-  &:nth-child(5n) {
-    margin-right: 0px;
+    &:nth-child(5n) {
+      margin-right: 0px;
+    }
   }
 }
+
+/* footer */
 
 .button {
   .footer-form & {
     position: absolute;
     margin-top: 20px;
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* modal */
+
+.button {
+  .modal & {
+    display: flex;
     justify-content: center;
     align-items: center;
   }

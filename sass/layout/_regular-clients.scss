@@ -1,8 +1,7 @@
 /* regular-clients -- Постоянные клиенты */
 
 .regular-clients__list {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-space-between;
 }
 
 .regular-clients__link {
@@ -12,11 +11,11 @@
   width: 170px;
   height: 92px;
 
-  border: 1px solid var(--social-color);
+  @include border(--social-color);
   border-radius: 4px;
   color: var(--social-color);
 
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {

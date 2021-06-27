@@ -3,12 +3,11 @@
 .header {
   display: flex;
   height: 80px;
-  border: 1px solid var(--main-background-color);
+  @include border(--main-background-color);
 }
 
 .header-container {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-space-between;
 
   align-items: center;
 }
@@ -26,8 +25,7 @@
 /* Site-nav */
 
 .site-nav {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-space-between;
   margin-left: 93px;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -61,16 +59,13 @@
   }
 
   & .header-nav__link {
-    display: flex;
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    display: flex;
 
     color: var(--main-color);
-    text-decoration: none;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %header-nav__link;
 
     &:hover,
     &:focus {
@@ -83,8 +78,7 @@
 /* Auth-nav */
 
 .auth-nav {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-space-between;
 
   & .header-nav__item {
     margin-right: 30px;
@@ -92,10 +86,7 @@
 
   & .header-nav__link {
     color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @extend %header-nav__link;
 
     display: flex;
     align-items: center;
